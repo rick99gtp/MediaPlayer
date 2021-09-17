@@ -1,0 +1,9 @@
+.audioplayer {
+    background: #3d4f4a;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.progressbar {
+    width: 250px;
+}

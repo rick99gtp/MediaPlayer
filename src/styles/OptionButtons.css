@@ -1,0 +1,16 @@
+.optionbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c2c2c2;
+}
+
+.optionspacing {
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.active {
+    color: rgb(24, 245, 164);
+}
