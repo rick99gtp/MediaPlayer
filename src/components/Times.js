@@ -2,11 +2,11 @@ import Current from './Current';
 import Duration from './Duration';
 import '../styles/Times.css';
 
-const Times = () => {
+const Times = (props) => {
     return (
         <div className='timescontainer'>
-            <Current />
-            <Duration />
+            <Current currentTime={props.current}/>
+            <Duration duration={props.duration}/>
         </div>
     )
 }

@@ -3,3 +3,7 @@
     padding: 5px;
     color: white;
 }
+
+.duration {
+    text-align: right;
+}

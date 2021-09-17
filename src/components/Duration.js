@@ -1,7 +1,7 @@
-const Duration = () => {
+const Duration = (props) => {
     return (
-        <div>
-            0:00
+        <div className='duration'>
+            {props.duration}
         </div>
     )
 }

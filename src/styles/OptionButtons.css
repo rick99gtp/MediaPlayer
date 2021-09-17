@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     color: #c2c2c2;
+    padding: 5px 0;
 }
 
 .optionspacing {
@@ -13,4 +14,20 @@
 
 .active {
     color: rgb(24, 245, 164);
+}
+
+.bounce {
+    animation: bounce .2s ease-in-out forwards;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
