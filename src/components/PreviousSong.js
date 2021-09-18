@@ -3,7 +3,7 @@ import '../styles/SkipButtons.css';
 
 const PreviousSong = () => {
     return (
-        <div className='skipbutton'>
+        <div className='btn skipbutton'>
             <ImPrevious2 />
         </div>
     )

@@ -15,21 +15,23 @@ const OptionButtons = () => {
     const toggleRepeat = () => {
         setRepeatActive(!repeatActive);
         setRepeatBounce(!repeatBounce);
+        setRandomActive(false);
     };
 
     const toggleRandom = () => {
         setRandomActive(!randomActive);
         setRandomBounce(!randomBounce);
+        setRepeatActive(false);
     };
 
     return (
         <div className='optionbuttons'>
             <BsArrowRepeat id='repeat'
-                className={`${repeatActive ? 'active' : null} ${repeatBounce ? 'bounce' : null} optionspacing`}
+                className={`${repeatActive ? 'active' : null} ${repeatBounce ? 'bounce' : null} optionspacing btn`}
                 onClick={toggleRepeat}
                 onAnimationEnd={() => { setRepeatBounce(false) }} />
             <FaRandom id='random' 
-            className={`${randomActive ? 'active' : null} ${randomBounce ? 'bounce' : null} optionspacing`} 
+            className={`${randomActive ? 'active' : null} ${randomBounce ? 'bounce' : null} optionspacing btn`} 
             onClick={toggleRandom}
             onAnimationEnd={() => { setRandomBounce(false) }} />
         </div>

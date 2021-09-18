@@ -8,7 +8,6 @@ const AudioPlayer = () => {
     // state
     const [currentTime, setCurrentTime] = useState(0);
     const [duration, setDuration] = useState(0);
-
     
     return (
         <div className='audioplayer'>

@@ -1,10 +1,17 @@
-import { IoMdPlayCircle } from 'react-icons/io';
+import { IoMdPlayCircle, IoMdPause } from 'react-icons/io';
 import '../styles/PlayPause.css';
+import { useState } from 'react';
 
 const PlayPause = () => {
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const togglePlayPause = () => {
+        setIsPlaying(!isPlaying);
+    };
+
     return (
-        <div className='playpause'>
-            <IoMdPlayCircle />
+        <div className='btn playpause' onClick={togglePlayPause}>
+            {isPlaying ? <IoMdPlayCircle /> : <IoMdPause />}
         </div>
     )
 }

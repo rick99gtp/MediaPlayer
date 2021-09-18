@@ -1,6 +1,6 @@
 const Current = (props) => {
     return (
-        <div>
+        <div className='timeFormat'>
             {props.currentTime}
         </div>
     )
